@@ -1,6 +1,6 @@
 # Alfis Docker (Alpine Static)
 
-This is a personal Docker image for [Alfis](https://github.com/Revertron/Alfis), built statically on Alpine Linux.
+This is a personal Docker image for [Alfis CLI](https://github.com/Revertron/Alfis), built statically on Alpine Linux.
 
 I wanted to run it on ARM64 but I couldn't find a proper image for it, ergo this repo.
 
@@ -9,7 +9,7 @@ I wanted to run it on ARM64 but I couldn't find a proper image for it, ergo this
 - **Arch**: AMD64, ARM64, ARMv7 & 386.
 - **Security**: Runs as a dedicated non-root user (`alfis`) inside the container (Make sure to set the permissions of the data directory to match this user or remap the user at run time to your desired one).
 - **Optimization**: Built with `doh` feature enabled, `LTO`, and `panic=abort` for performance and size optimization.
-- **Interface**: CLI (Command Line Interface) only. No GUI included.
+
 
 ## Build Policy & Versions
 The GitHub Actions workflow runs daily to check for:
